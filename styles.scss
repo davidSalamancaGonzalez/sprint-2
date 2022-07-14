@@ -1,0 +1,197 @@
+/* general */
+
+$primary: #5265E1;
+$secondary: #FA5959;
+
+/* nav + navbar + navtabs */
+
+$nav-link-color: gray;
+$nav-link-font-weight: bold;
+$nav-link-hover-color: $secondary;
+$navbar-toggler-focus-width: none;
+
+
+
+/* cards  */
+
+$card-spacer-y: 1rem;
+$card-border-color:transparent;
+$card-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+
+/* accordion */
+
+$accordion-padding-x: 0;
+$accordion-button-active-bg: white;
+$accordion-button-focus-box-shadow: none;
+$accordion-button-active-color: $secondary;
+
+/* form */
+
+.container-tab {
+    min-height: 25rem;
+}
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.containerTop {
+    min-height: 35rem;
+}
+
+
+.btn-primary:hover {
+    color: $primary;
+    background-color: #f9f7f4;
+    border-color: $primary;
+}
+
+.btn-secondary {
+    color: white;
+}
+
+.btn-secondary:hover {
+    color: $secondary;
+    background-color: #f9f7f4;
+    border-color: $secondary;
+}
+
+.btn-light:hover {
+    color: $primary;
+    border: solid 1px $primary;
+    ;
+}
+
+.nav-link:hover {
+    color: $secondary;
+}
+
+
+.nav-tabs {
+    --bs-nav-tabs-link-active-border-color: white white #FA5959 white;
+    --bs-nav-tabs-link-border-color: white gray white white;
+    --bs-nav-tabs-border-width: 3px;
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.pastilla-dos {
+    margin-left: -14px;
+}
+
+/* Para el ej-7 con nth-child */
+
+.first div:nth-child(2) {
+
+    margin-top: 5rem
+}
+
+.first div:nth-child(3) {
+    margin-top: 8rem;
+}
+
+/* Hasta el ej-6 con class */
+
+ .col-center-position {
+    margin-top: 5rem;
+} 
+
+.col-right-position {
+    margin-top: 8rem;
+
+} 
+
+
+
+.accordion-button {
+    font-size: 1.25rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+}
+
+.accordion-button.collapsed::after {
+    background-image: url(/images/icon-arrow.svg);
+    color: $primary;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/images/icon-arrow.svg);
+    filter: invert(56%) sepia(15%) saturate(7470%) hue-rotate(323deg) brightness(95%) contrast(107%);
+}
+
+.accordion-button:focus {
+    box-shadow: unset;
+}
+
+.accordion-button:hover {
+    color: $secondary;
+}
+
+
+.letterSpace {
+    letter-spacing: 4px;
+}
+
+.linkCustom {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+a:hover {
+    color: $secondary;
+}
+
+.iconHover:hover {
+    filter: invert(47%) sepia(20%) saturate(1508%) hue-rotate(313deg) brightness(100%) contrast(120%);
+}
+
+.invalid-feedback {
+    background-color: $secondary;
+    color: white;
+    margin-top: -5px;
+}
+
+.valid-feedback {
+    background-color: rgba(25, 135, 84, 0.9);
+    color: white;
+    margin-top: -5px;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    background-image: url(/images/icon-error.svg);
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .first div:nth-child(2) {
+
+        margin-top: 3rem
+    }
+
+    .first div:nth-child(3) {
+        margin-top: 3rem;
+    }
+
+    .col-center-position {
+        margin-top: 3rem;
+    }
+
+    .col-right-position {
+        margin-top: 3rem;
+
+    }
+}
